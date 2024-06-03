@@ -137,7 +137,6 @@ module.exports = function (app) {
 
   function startScanning() {
     startNoble();
-    noble.startScanning([], true);
   }
 
   plugin.start = function (options) {
