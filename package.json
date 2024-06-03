@@ -1,16 +1,24 @@
 {
   "name": "signalk-govee-plugin",
   "version": "1.0.0",
+  "description": "Plugin to read data from Govee devices and send to Signal K server",
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-category-environment"
+  ],
+  "signalk-plugin-enabled-by-default": false,
+  "signalk": {
+    "appIcon": "./assets/icons/icon-72x72.png",
+    "displayName": "Govee BLE Sensor Plugin"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "guyht",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@abandonware/noble": "^1.9.2-25",
-    "@signalk/server-api": "^2.4.0"
+    "@abandonware/noble": "^1.9.2-15",
+    "@signalk/server-api": "^1.18.1"
   }
 }
