@@ -4,7 +4,7 @@
   "description": "Plugin to read data from Govee devices and send to Signal K server",
   "keywords": [
     "signalk-node-server-plugin",
-    "signalk-category-environment"
+    "signalk-category-hardware"
   ],
   "signalk-plugin-enabled-by-default": false,
   "signalk": {
@@ -16,7 +16,7 @@
     "start": "node index.js"
   },
   "author": "guyht",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@abandonware/noble": "^1.9.2-15",
     "@signalk/server-api": "^1.18.1"
