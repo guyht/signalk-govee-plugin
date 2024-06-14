@@ -32,27 +32,27 @@ Once installed, you need to configure the plugin to connect to your Govee device
 To enable Bluetooth scanning, you may need to configure the permissions on your device. The following is tested on a raspberry pi 4 running openplotter:
 
 1. **Set the necessary permissions:**
-   \`\`\`bash
-   sudo setcap cap_net_raw+eip $(eval readlink -f \`which node\`)
-   \`\`\`
+   ```bash
+   sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
+   ```
 
 2. **Ensure permissions are set on startup:**
-   - Add the above command to \`/etc/rc.local\` to make sure permissions are given on start up.
+   - Add the above command to `/etc/rc.local` to make sure permissions are given on start up.
 
 ## Usage
 
 Once configured, the plugin will automatically start scanning for the specified Govee device and send data to the Signal K server. 
 
 You can monitor the following data paths in Signal K:
-- **Temperature:** \`environment.inside.temperature\` (in Kelvin)
-- **Humidity:** \`environment.inside.humidity\` (as a fraction from 0 to 1)
-- **Battery Level:** \`electrical.batteries.govee.batteryLevel\` (as a fraction from 0 to 1)
+- **Temperature:** `environment.inside.temperature` (in Kelvin)
+- **Humidity:** `environment.inside.humidity` (as a fraction from 0 to 1)
+- **Battery Level:** `electrical.batteries.govee.batteryLevel` (as a fraction from 0 to 1)
 
 ## Example Data
 
 Here is an example of the data that will be sent to your Signal K server:
 
-\`\`\`json
+```json
 {
   "environment": {
     "inside": {
@@ -72,7 +72,7 @@ Here is an example of the data that will be sent to your Signal K server:
     }
   }
 }
-\`\`\`
+```
 
 ## Troubleshooting
 
