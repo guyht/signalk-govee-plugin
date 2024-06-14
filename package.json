@@ -1,6 +1,6 @@
 {
   "name": "signalk-govee-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin to read data from Govee devices and send to Signal K server",
   "keywords": [
     "signalk-node-server-plugin",
